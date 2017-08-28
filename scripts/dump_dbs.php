@@ -1,4 +1,5 @@
 <?php
+set_time_limit(0);
 $config = parse_ini_file('config.ini', true);
 
 for($i=1; $i <= $config['default']['total_db']; $i++) {
