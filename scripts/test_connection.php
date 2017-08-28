@@ -10,3 +10,5 @@ for($i=1; $i <= $config['default']['total_db']; $i++) {
 	$res = $stmt->fetchAll();	
 	print_r($res);
 }
+
+readline('Press enter...');
