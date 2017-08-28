@@ -6,4 +6,4 @@ $cmd = "mysql -u".$config['mysql']['db_user']." -p".$config['mysql']['db_pass'].
 $sql_cmd = shell_exec($cmd);
 $sql_cmd .= "mysql -u".$config['mysql']['db_user']." -p".$config['mysql']['db_pass']." -h".$config['mysql']['db_host']." --port ".$config['mysql']['db_port']." -e '".str_replace(PHP_EOL, " ", $sql_cmd)."'";
 
-echo $sql_cmd;
+shell_exec($sql_cmd);
