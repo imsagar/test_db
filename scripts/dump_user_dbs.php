@@ -1,8 +1,8 @@
 <?php
 $param = $argv;
 $db_prefix = $argv[1];
-$start = $argv[3]??1;
-$end = $argv[4]??10;
+$start = $argv[2]??1;
+$end = $argv[3]??10;
 
 set_time_limit(0);
 $config = parse_ini_file('config.ini', true);
